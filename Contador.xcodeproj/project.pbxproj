@@ -24,6 +24,11 @@
 		94A867F419995BB700604BA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A867CF19995BB700604BA4 /* UIKit.framework */; };
 		94A867FC19995BB700604BA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94A867FA19995BB700604BA4 /* InfoPlist.strings */; };
 		94A867FE19995BB700604BA4 /* ContadorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A867FD19995BB700604BA4 /* ContadorTests.m */; };
+		94A8680819995C3600604BA4 /* ContadorGeiger.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 94A8680719995C3600604BA4 /* ContadorGeiger.atlas */; };
+		94A8680D19995C7000604BA4 /* DQContadorGeiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8680C19995C7000604BA4 /* DQContadorGeiger.m */; };
+		94A8681019995F0800604BA4 /* DQUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A8680F19995F0800604BA4 /* DQUtils.m */; };
+		94A86817199964FF00604BA4 /* ContadorGeiger-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 94A86814199964FF00604BA4 /* ContadorGeiger-2.wav */; };
+		94A868191999662300604BA4 /* ContadorGeiger-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 94A868181999662300604BA4 /* ContadorGeiger-1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,13 @@
 		94A867F919995BB700604BA4 /* ContadorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ContadorTests-Info.plist"; sourceTree = "<group>"; };
 		94A867FB19995BB700604BA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		94A867FD19995BB700604BA4 /* ContadorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContadorTests.m; sourceTree = "<group>"; };
+		94A8680719995C3600604BA4 /* ContadorGeiger.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = ContadorGeiger.atlas; sourceTree = "<group>"; };
+		94A8680B19995C7000604BA4 /* DQContadorGeiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQContadorGeiger.h; sourceTree = "<group>"; };
+		94A8680C19995C7000604BA4 /* DQContadorGeiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQContadorGeiger.m; sourceTree = "<group>"; };
+		94A8680E19995F0800604BA4 /* DQUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQUtils.h; sourceTree = "<group>"; };
+		94A8680F19995F0800604BA4 /* DQUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DQUtils.m; sourceTree = "<group>"; };
+		94A86814199964FF00604BA4 /* ContadorGeiger-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "ContadorGeiger-2.wav"; sourceTree = "<group>"; };
+		94A868181999662300604BA4 /* ContadorGeiger-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ContadorGeiger-1.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,8 @@
 		94A867D319995BB700604BA4 /* Contador */ = {
 			isa = PBXGroup;
 			children = (
+				94A8680B19995C7000604BA4 /* DQContadorGeiger.h */,
+				94A8680C19995C7000604BA4 /* DQContadorGeiger.m */,
 				94A867DC19995BB700604BA4 /* DQAppDelegate.h */,
 				94A867DD19995BB700604BA4 /* DQAppDelegate.m */,
 				94A867DF19995BB700604BA4 /* Main.storyboard */,
@@ -130,7 +144,11 @@
 				94A867E619995BB700604BA4 /* DQMyScene.m */,
 				94A867E819995BB700604BA4 /* Spaceship.png */,
 				94A867EA19995BB700604BA4 /* Images.xcassets */,
+				94A86811199964FF00604BA4 /* ContadorGeiger */,
+				94A8680719995C3600604BA4 /* ContadorGeiger.atlas */,
 				94A867D419995BB700604BA4 /* Supporting Files */,
+				94A8680E19995F0800604BA4 /* DQUtils.h */,
+				94A8680F19995F0800604BA4 /* DQUtils.m */,
 			);
 			path = Contador;
 			sourceTree = "<group>";
@@ -162,6 +180,15 @@
 				94A867FA19995BB700604BA4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94A86811199964FF00604BA4 /* ContadorGeiger */ = {
+			isa = PBXGroup;
+			children = (
+				94A868181999662300604BA4 /* ContadorGeiger-1.mp3 */,
+				94A86814199964FF00604BA4 /* ContadorGeiger-2.wav */,
+			);
+			path = ContadorGeiger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A867D819995BB700604BA4 /* InfoPlist.strings in Resources */,
+				94A868191999662300604BA4 /* ContadorGeiger-1.mp3 in Resources */,
 				94A867EB19995BB700604BA4 /* Images.xcassets in Resources */,
+				94A86817199964FF00604BA4 /* ContadorGeiger-2.wav in Resources */,
 				94A867E919995BB700604BA4 /* Spaceship.png in Resources */,
+				94A8680819995C3600604BA4 /* ContadorGeiger.atlas in Resources */,
 				94A867E119995BB700604BA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,9 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94A8681019995F0800604BA4 /* DQUtils.m in Sources */,
 				94A867DA19995BB700604BA4 /* main.m in Sources */,
 				94A867E419995BB700604BA4 /* DQViewController.m in Sources */,
 				94A867DE19995BB700604BA4 /* DQAppDelegate.m in Sources */,
+				94A8680D19995C7000604BA4 /* DQContadorGeiger.m in Sources */,
 				94A867E719995BB700604BA4 /* DQMyScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
